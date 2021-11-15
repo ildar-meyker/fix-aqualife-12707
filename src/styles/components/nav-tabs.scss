@@ -1,12 +1,41 @@
 .nav-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+
 	&__item {
+		transition: all 0.2s;
+		margin-top: 5px;
+		flex: 0 0 auto;
+		width: 100%;
+		padding: 0.9em;
+		text-align: center;
+		border: 1px solid #ededed;
+		border-radius: 2px;
+		font-weight: 500;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:hover,
 		&.active {
+			border-color: transparent;
+			background: #30a657;
+			color: #fff;
 		}
 	}
 }
 
-@media (min-width: 768px) {
-}
+@media (min-width: 500px) {
+	.nav-tabs {
+		margin-bottom: 0;
 
-@media (min-width: 992px) {
+		&__item {
+			width: auto;
+			padding-right: 40/14 + em;
+			padding-left: 40/14 + em;
+			margin: 0 15px 15px 0;
+		}
+	}
 }

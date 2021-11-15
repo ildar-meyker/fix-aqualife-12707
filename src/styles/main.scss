@@ -1,7 +1,12 @@
 @import "../../node_modules/destyle.css/destyle";
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_mixins";
+@import "../../node_modules/bootstrap/scss/_transitions";
 @import "../../node_modules/simplebar/dist/simplebar";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 
+@import "./components/fonts";
 @import "./components/icomoon";
 @import "./components/buttons";
 @import "./components/layout";
@@ -10,5 +15,16 @@
 @import "./components/popup-gallery";
 @import "./components/table-props";
 @import "./components/nav-tabs";
+@import "./components/tabs-panes";
+@import "./components/product-settings";
+@import "./components/product-order";
 @import "./components/page-product";
 @import "./components/notify";
+
+.is-flipped {
+	transform: scale(-1);
+}
+
+.rotate-90 {
+	transform: rotate(90deg);
+}
