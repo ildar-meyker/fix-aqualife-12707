@@ -10,11 +10,11 @@ layout: default.hbs
 
     <div class="layout__center">
 
-        <section class="page-product__section">
-            <form action="#">
-                <h1 class="page-product__h1">Вода питьевая "Аквалайф"</h1>
+        <h1 class="page-product__h1">Вода питьевая "Аквалайф"</h1>
 
-                <div class="page-product__about">
+        <section class="page-product__about">
+            <form action="#">
+                <div class="page-product__about__row">
                     <div class="page-product__about__col-gallery">
                         <section class="slider-gallery slider-dots-1 slider-dots-1--large" id="slider-gallery" data-product-id="1">
                             <div class="slider-gallery__list">
@@ -245,15 +245,14 @@ layout: default.hbs
             </form>
         </section>
 
-        <section class="page-product__section">
+        <section class="page-product__more">
 
             <h2 class="page-product__h2">Успей купить</h2>
 
             <div class="goods-cards">
-                {{#repeat 4}}
                 <div class="goods-cards__col">
                     <div class="goods-cards__item">
-                        <a href="#" class="goods-cards__image"></a>
+                        <a href="#" class="goods-cards__image" style="background-image: url(images/temp/gallery/1/1.jpeg);"></a>
                         <div class="goods-cards__title">
                             <a href="#">
                                 Вода Черноголовка 19
@@ -261,22 +260,95 @@ layout: default.hbs
                                 бутыли
                             </a>
                         </div>
-                        <div class="goods-cards__price">280 ₽</div>
-                        <div class="goods-cards__control">
-                            <button type="button" class="btn-green goods-cards__btn-buy">Купить</button>
-                            <button type="button" class="goods-cards__btn-add-to-favorites">
-                                <i class="icon-heart-outline"></i>
-                            </button>
+                        <div class="goods-cards__sep"></div>
+                        <div class="goods-cards__desc">
+                            <div class="goods-cards__price">280 ₽</div>
+                            <div class="goods-cards__control">
+                                <div class="goods-cards__btn-buy">
+                                    <button type="button" class="btn-green">Купить</button>
+                                </div>
+                                <button type="button" class="goods-cards__btn-save">
+                                    <i class="icon-heart-o"></i>
+                                </button>
+                            </div>
+                            <div class="goods-cards__tip">* Продается в упаковках по 1 шт.</div>
                         </div>
-                        <div class="goods-cards__tip">* Продается в упаковках по 1 шт.</div>
                     </div>
                 </div>
-                {{/repeat}}
+                <div class="goods-cards__col">
+                    <div class="goods-cards__item">
+                        <a href="#" class="goods-cards__image" style="background-image: url(images/temp/gallery/1/1.jpeg);"></a>
+                        <div class="goods-cards__title">
+                            <a href="#">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magni inventore, dolorem blanditiis quibusdam quidem debitis vel et esse nostrum, minus ducimus perferendis rerum sit fuga animi dolorum. Voluptates, sapiente?
+                            </a>
+                        </div>
+                        <div class="goods-cards__sep"></div>
+                        <div class="goods-cards__desc">
+                            <div class="goods-cards__price">280 ₽</div>
+                            <div class="goods-cards__control">
+                                <div class="goods-cards__btn-buy">
+                                    <button type="button" class="btn-green">Купить</button>
+                                </div>
+                                <button type="button" class="goods-cards__btn-save">
+                                    <i class="icon-heart-o"></i>
+                                </button>
+                            </div>
+                            <div class="goods-cards__tip">* Продается в упаковках по 1 шт.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-cards__col">
+                    <div class="goods-cards__item">
+                        <a href="#" class="goods-cards__image" style="background-image: url(images/temp/gallery/1/2.jpeg);"></a>
+                        <div class="goods-cards__title">
+                            <a href="#">
+                                Similique magni inventore, dolorem blanditiis quibusdam quidem debitis vel et esse nostrum, minus ducimus perferendis rerum sit fuga animi dolorum. Voluptates, sapiente?
+                            </a>
+                        </div>
+                        <div class="goods-cards__sep"></div>
+                        <div class="goods-cards__desc">
+                            <div class="goods-cards__price">280 ₽</div>
+                            <div class="goods-cards__control">
+                                <div class="goods-cards__btn-buy">
+                                    <button type="button" class="btn-green">Купить</button>
+                                </div>
+                                <button type="button" class="goods-cards__btn-save">
+                                    <i class="icon-heart-o"></i>
+                                </button>
+                            </div>
+                            <div class="goods-cards__tip">* Продается в упаковках по 1 шт.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-cards__col">
+                    <div class="goods-cards__item">
+                        <a href="#" class="goods-cards__image" style="background-image: url(images/temp/gallery/1/3.jpeg);"></a>
+                        <div class="goods-cards__title">
+                            <a href="#">
+                                Vel et esse nostrum, minus ducimus perferendis rerum sit fuga animi dolorum. Voluptates, sapiente?
+                            </a>
+                        </div>
+                        <div class="goods-cards__sep"></div>
+                        <div class="goods-cards__desc">
+                            <div class="goods-cards__price">280 ₽</div>
+                            <div class="goods-cards__control">
+                                <div class="goods-cards__btn-buy">
+                                    <button type="button" class="btn-green">Купить</button>
+                                </div>
+                                <button type="button" class="goods-cards__btn-save">
+                                    <i class="icon-heart-o"></i>
+                                </button>
+                            </div>
+                            <div class="goods-cards__tip">* Продается в упаковках по 1 шт.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
 
-        <section class="page-product__section">
+        <section class="page-product__tabs">
 
             <nav class="nav-tabs">
                 <a href="#tab-pane-1" class="nav-tabs__item js-nav-tabs__item active">Характеристики</a>

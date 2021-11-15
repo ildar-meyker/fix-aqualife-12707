@@ -1,0 +1,100 @@
+.goods-cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -30px -15px 0 -15px;
+
+	&__col {
+		flex: 0 0 auto;
+		margin-top: 30px;
+		padding: 0 15px;
+		width: 25%;
+	}
+
+	&__item {
+		padding: 15px 0;
+		border: 1px solid #ededed;
+		border-radius: 2px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__image {
+		display: block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+
+		&:before {
+			content: "";
+			padding-top: 75%;
+			display: block;
+		}
+	}
+
+	&__sep {
+		border-top: 1px solid #ededed;
+		margin: 15px 20px;
+	}
+
+	&__desc {
+		padding: 0 20px;
+	}
+
+	&__title {
+		margin-top: 15px;
+		margin-bottom: auto;
+		padding: 0 20px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 500;
+
+		a {
+			color: #001a34;
+		}
+	}
+
+	&__price {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 500;
+	}
+
+	&__control {
+		margin-top: 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__btn-buy {
+		> * {
+			font-size: 18px;
+		}
+	}
+
+	&__btn-save {
+		font-size: 33px;
+		line-height: 0;
+		color: #30a657;
+	}
+
+	&__tip {
+		margin-top: 15px;
+		font-size: 16px;
+		font-weight: 300;
+		color: #bcbcbc;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.goods-cards {
+		&__btn-buy {
+			> * {
+				padding-right: 2em;
+				padding-left: 2em;
+			}
+		}
+	}
+}
