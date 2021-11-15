@@ -1,8 +1,8 @@
 {
   "name": "fix-aqualife-12707",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ildar-meyker/fix-aqualife-12707.git"
+    "type": "git",
+    "url": "https://github.com/ildar-meyker/fix-aqualife-12707.git"
   },
   "version": "0.0.1",
   "description": "",
@@ -49,6 +49,9 @@
   },
   "dependencies": {
     "destyle.css": "^1.0.9",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "simplebar": "^5.3.6",
+    "slick-carousel": "^1.8.1",
+    "throttle-debounce": "^3.0.1"
   }
 }

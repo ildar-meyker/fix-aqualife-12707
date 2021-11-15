@@ -5,6 +5,199 @@ layout: default.hbs
 
 <header class="header"></header>
 
+
+<main>
+
+    <div class="layout__center">
+
+        <section>
+            <h1 class="page-product__h1">Вода питьевая "Аквалайф"</h1>
+
+            <div class="page-product__about">
+                <div class="page-product__about__col-gallery">
+                    <section class="slider-gallery slider-dots-1 slider-dots-1--large" id="slider-gallery" data-product-id="1">
+                        <div class="slider-gallery__list">
+                            <div class="slider-gallery__item" data-index="0">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="1">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="2">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="3">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="4">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="5">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="6">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="7">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="8">
+                                <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                                <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                            </div>
+                            <div class="slider-gallery__item" data-index="9">
+                                <div class="slider-gallery__slide">
+                                    <div class="slider-gallery__video">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/c7VPxYRqwsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-gallery__nav">
+                            <div class="slider-gallery__nav__window" data-simplebar>
+                                <div class="slider-gallery__nav__item active" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
+                                <div class="slider-gallery__nav__item" style="background-image: url(images/temp/gallery/1/3.jpeg);"></div>
+                                <div class="slider-gallery__nav__item slider-gallery__nav__item--video" style="background-image: url(https://i.ytimg.com/vi/c7VPxYRqwsQ/maxresdefault.jpg);"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="page-product__about__col-desc">
+
+                </div>
+                <div class="page-product__about__col-card">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="page-product__section">
+
+            <h2 class="page-product__h2">Успей купить</h2>
+
+            <div class="goods-cards">
+                {{#repeat 4}}
+                <div class="goods-cards__col">
+                    <div class="goods-cards__item">
+                        <a href="#" class="goods-cards__image"></a>
+                        <div class="goods-cards__title">
+                            <a href="#">
+                                Вода Черноголовка 19
+                                литров в одноразовой
+                                бутыли
+                            </a>
+                        </div>
+                        <div class="goods-cards__price">280 ₽</div>
+                        <div class="goods-cards__control">
+                            <button type="button" class="btn-green goods-cards__btn-buy">Купить</button>
+                            <button type="button" class="goods-cards__btn-add-to-favorites">
+                                <i class="icon-heart-outline"></i>
+                            </button>
+                        </div>
+                        <div class="goods-cards__tip">* Продается в упаковках по 1 шт.</div>
+                    </div>
+                </div>
+                {{/repeat}}
+            </div>
+
+        </section>
+
+        <section class="page-product__section">
+
+            <nav class="nav-tabs">
+                <a href="#" class="nav-tabs__item active">Характеристики</a>
+                <a href="#" class="nav-tabs__item">Состав</a>
+                <a href="#" class="nav-tabs__item">Минерализация</a>
+            </nav>
+
+            <table class="table-props">
+                <tr>
+                    <td>Тип воды:</td>
+                    <td>Питьевая вода</td>
+                </tr>
+                <tr>
+                    <td>Срок годности:</td>
+                    <td>12 месяцев</td>
+                </tr>
+                <tr>
+                    <td>Объем:</td>
+                    <td>19 литров</td>
+                </tr>
+                <tr>
+                    <td>Вкус:</td>
+                    <td>Б/вкуса</td>
+                </tr>
+                <tr>
+                    <td>Бренд:</td>
+                    <td>Аквалайф</td>
+                </tr>
+                <tr>
+                    <td>Количество в 1 упаковке:</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Общая минерализация:</td>
+                    <td>50 - 1000 мг/л</td>
+                </tr>
+                <tr>
+                    <td>Общая жесткость:</td>
+                    <td>не более 7 мг-экв/л</td>
+                </tr>
+                <tr>
+                    <td>Водородный показатель (рН):</td>
+                    <td>7,6</td>
+                </tr>
+                <tr>
+                    <td>Калий:</td>
+                    <td>0,5 мг/л</td>
+                </tr>
+                <tr>
+                    <td>Кальций:</td>
+                    <td>130 мг/л</td>
+                </tr>
+                <tr>
+                    <td>Магний:</td>
+                    <td>3 мг/л</td>
+                </tr>
+                <tr>
+                    <td>Хлориды:</td>
+                    <td>0,67 мг/л</td>
+                </tr>
+                <tr>
+                    <td>Сульфаты:</td>
+                    <td>5,9 мг/л</td>
+                </tr>
+                <tr>
+                    <td>Бикарбонаты:</td>
+                    <td>47 мг/л</td>
+                </tr>
+                <tr>
+                    <td>Вес (нетто):</td>
+                    <td>19000</td>
+                </tr>
+            </table>
+            
+        </section>
+
+    </div>
+
+</main>
+
 <footer class="footer">
     <div class="footer__main">
         <div class="layout__center">
@@ -113,3 +306,5 @@ layout: default.hbs
         </div>
     </div>
 </footer>
+
+{{> popup-gallery }}

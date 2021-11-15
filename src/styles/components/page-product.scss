@@ -1,0 +1,30 @@
+.page-product {
+	&__h2 {
+	}
+
+	&__section {
+	}
+}
+
+@media (min-width: 1200px) {
+	.page-product {
+		&__about {
+			display: flex;
+
+			&__col-gallery {
+				flex: 0 0 auto;
+				width: 33.33%;
+			}
+
+			&__col-desc {
+				flex: 0 0 auto;
+				width: 33.33%;
+			}
+
+			&__col-card {
+				flex: 0 0 auto;
+				width: 33.33%;
+			}
+		}
+	}
+}
