@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 const NavTabs = {
 	_handleTabClick(e) {
 		e.preventDefault();
@@ -25,7 +27,7 @@ const NavTabs = {
 	init() {
 		$(document).on(
 			"click",
-			".js-nav-tabs__item",
+			".nav-tabs__item",
 			this._handleTabClick.bind(this)
 		);
 	},

@@ -1,6 +1,7 @@
 /*! destyle.css v1.0.14 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model */
 /* ============================================ */
+@import url(../../node_modules/swiper/swiper-bundle.css);
 * {
   box-sizing: border-box; }
 
@@ -1118,6 +1119,44 @@ template {
   .slider-gallery .slick-dots {
     display: none !important; } }
 
+.slider-select__body {
+  position: relative;
+  padding: 0 20px; }
+
+.slider-select__next, .slider-select__prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 15px; }
+
+.slider-select__next {
+  right: 0; }
+
+.slider-select__prev {
+  left: 0; }
+
+.slider-select .swiper-wrapper {
+  display: flex;
+  overflow: hidden; }
+
+.slider-select .swiper-initialized .swiper-wrapper {
+  overflow: visible; }
+
+.slider-select .swiper-slide {
+  flex: 0 0 auto;
+  width: auto;
+  padding: 0.92857em 1.35714em;
+  border: 1px solid #ededed;
+  border-radius: 2px;
+  white-space: nowrap;
+  margin-right: 5px; }
+  .slider-select .swiper-slide.active {
+    border-color: #158acc; }
+
+.slider-select .swiper-button-disabled {
+  opacity: 0.5; }
+
 .popup-gallery {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -1322,6 +1361,16 @@ template {
       height: auto;
       overflow: visible; }
 
+.product-settings__item {
+  margin-top: 15px; }
+  .product-settings__item:first-child {
+    margin-top: 0; }
+
+.product-settings__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500; }
+
 .goods-cards {
   display: flex;
   flex-wrap: wrap;
@@ -1392,6 +1441,7 @@ template {
   min-width: 320px;
   font-family: "Muller", sans-serif;
   font-size: 14px;
+  line-height: 1;
   color: #001a34; }
   .page-product__more {
     display: none; }
@@ -1456,9 +1506,11 @@ template {
       background: #ec4949; }
 
 .is-flipped {
+  display: inline-block;
   -webkit-transform: scale(-1);
           transform: scale(-1); }
 
 .rotate-90 {
+  display: inline-block;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }

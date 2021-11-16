@@ -1,2 +1,15 @@
 .product-settings {
+	&__item {
+		margin-top: 15px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 500;
+	}
 }

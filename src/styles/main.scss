@@ -5,6 +5,7 @@
 @import "../../node_modules/bootstrap/scss/_transitions";
 @import "../../node_modules/simplebar/dist/simplebar";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/swiper/swiper-bundle.css";
 
 @import "./components/fonts";
 @import "./components/icomoon";
@@ -12,6 +13,7 @@
 @import "./components/layout";
 @import "./components/footer";
 @import "./components/slider-gallery";
+@import "./components/slider-select";
 @import "./components/popup-gallery";
 @import "./components/table-props";
 @import "./components/nav-tabs";
@@ -23,9 +25,11 @@
 @import "./components/notify";
 
 .is-flipped {
+	display: inline-block;
 	transform: scale(-1);
 }
 
 .rotate-90 {
+	display: inline-block;
 	transform: rotate(90deg);
 }

@@ -5,6 +5,7 @@ import "simplebar";
 
 import "./modules/Notify";
 import "./modules/SliderGallery";
+import "./modules/SliderSelect";
 import "./modules/NavTabs";
 
 $(function () {
