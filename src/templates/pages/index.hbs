@@ -10,6 +10,8 @@ layout: default.hbs
 
     <div class="layout__center">
 
+        
+
         <h1 class="page-product__h1">Вода питьевая "Аквалайф"</h1>
 
         <section class="page-product__about">
@@ -21,8 +23,6 @@ layout: default.hbs
                                 <div class="slider-gallery__item" data-index="0">
                                     <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
                                     <div class="slider-gallery__zoom" style="background-image: url(images/temp/gallery/1/1.jpeg);"></div>
-                                    <div class="slider-gallery__label">Артезианский источник</div>
-                                    <div class="slider-gallery__info">Идеально для приготовления детского питания</div>
                                 </div>
                                 <div class="slider-gallery__item" data-index="1">
                                     <div class="slider-gallery__slide" style="background-image: url(images/temp/gallery/1/2.jpeg);"></div>
@@ -78,6 +78,8 @@ layout: default.hbs
                                     <div class="slider-gallery__nav__item slider-gallery__nav__item--video" style="background-image: url(https://i.ytimg.com/vi/c7VPxYRqwsQ/maxresdefault.jpg);"></div>
                                 </div>
                             </div>
+                            <div class="slider-gallery__label">Артезианский источник</div>
+                            <div class="slider-gallery__info">Идеально для приготовления детского питания</div>
                         </section>
                     </div>
                     <div class="page-product__about__col-desc">
@@ -163,7 +165,7 @@ layout: default.hbs
 
                             <div class="product-settings__item">
                                 <div class="product-settings__title">Количество в упаковке:</div>
-                                <div class="page-product__desc__count">
+                                <div class="product-settings__count">
                                     <input type="text" class="input-default" value="1">
                                 </div>
                             </div>
@@ -185,61 +187,77 @@ layout: default.hbs
                     <div class="page-product__about__col-card">
                         
                         <section class="product-order">
-                            <div class="product-order__price">
-                                <div class="product-order__price__col-left">
-                                    <div class="product-order__price__old">500 ₽</div>
-                                    <div class="product-order__price__actual">280 ₽</div>
-                                    <div class="product-order__price__count">(12 штук)</div>
-                                </div>
-                                <div class="product-order__price__col-right">
-                                    <div class="product-order__price__discount">Скидка 30%</div>
-                                    <div class="product-order__price__per-item">16 руб.шт</div>
-                                </div>
-                            </div>
-                            
-                            <div class="product-order__sep"></div>
-                            
-                            <div class="product-order__payment">
-                                <div class="product-order__payment__type">
-                                    <i class="icon-cash"></i>
-                                    <span>Можно наличными</span>
-                                </div>
-                                <div class="product-order__payment__type">
-                                    <i class="icon-cash"></i>
-                                    <span>Можно по карте</span>
-                                </div>
-                            </div>
-                            
-                            <button type="button" class="btn-green product-order__btn-add"></button>
-                            
-                            <div class="product-order__sep"></div>
 
-                            <div class="product-order__express">
-                                <div class="product-order__express__icon">
-                                    <div class="icon-cart"></div>
+                            <div class="product-order__desc">
+                                <div class="product-order__tags product-order__tags--top">
+                                    <div class="product-order__tags__item product-order__tags__item--blue">Скидка 30%</div>
+                                    <div class="product-order__tags__item">16 руб. шт</div>
                                 </div>
-                                <div class="product-order__express__text">
-                                    EXPRESS! <br>
-                                    Доставим сегодня!
-                                </div>
-                            </div>
-                            
-                            <div class="product-order__city">
-                                <div class="product-order__city__icon">
-                                    <i class="icon-location"></i>
-                                </div>
-                                <div class="product-order__city__desc">
-                                    <div class="product-order__city__title">Доставка в:</div>
-                                    <div class="product-order__city__select">
-                                        Санкт-Петербург
+
+                                <h2 class="product-order__title">Вода питьевая "Аквалайф"</h2>
+
+                                <div class="product-order__label">Характеристики</div>
+
+                                <div class="product-order__price">
+                                    <div class="product-order__price__col-left">
+                                        <div class="product-order__price__old">500 ₽</div>
+                                        <div class="product-order__price__actual">280 ₽</div>
+                                        <div class="product-order__price__count">(12 штук)</div>
+                                    </div>
+                                    <div class="product-order__price__col-right">
+                                        <div class="product-order__tags">
+                                            <div class="product-order__tags__item product-order__tags__item--blue">Скидка 30%</div>
+                                            <div class="product-order__tags__item">16 руб. шт</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                
+                                <div class="product-order__sep"></div>
+                                
+                                <div class="product-order__payment">
+                                    <div class="product-order__payment__type">
+                                        <i class="icon-cash"></i>
+                                        <span>Можно <br>наличными</span>
+                                    </div>
+                                    <div class="product-order__payment__type">
+                                        <i class="icon-card"></i>
+                                        <span>Можно <br>по карте</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-order__btn-add">
+                                    <button type="button" class="btn-green">Добавить в корзину</button>
+                                </div>
+                                
+                                <div class="product-order__express">
+                                    <div class="product-order__express__icon">
+                                        <div class="icon-car"></div>
+                                    </div>
+                                    <div class="product-order__express__text">
+                                        EXPRESS! 
+                                        <br>Доставим сегодня!
+                                    </div>
+                                </div>
+                                
+                                <div class="product-order__city">
+                                    <div class="product-order__city__icon">
+                                        <i class="icon-location"></i>
+                                    </div>
+                                    <div class="product-order__city__desc">
+                                        <div class="product-order__city__title">Доставка в:</div>
+                                        <div class="product-order__city__name">
+                                            <span>Санкт-Петербург</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </div>
+                                        <div class="product-order__city__edit">Изменить</div>
+                                    </div>
+                                    <a href="#" class="link-area"></a>
+                                </div>
 
-                            <div class="product-order__delivery-price">
-                                20 сентября (вторник) - 399 ₽
+                                <div class="product-order__delivery-price">
+                                    20 сентября (вторник) - 399 ₽
+                                </div>
                             </div>
-                            
                             <div class="product-order__tip">
                                 * Не хватает 1000 ₽ или 1 бут. 19л. до
                                 БЕСПЛАТНОЙ ДОСТАВКИ 
@@ -286,7 +304,7 @@ layout: default.hbs
                         <a href="#" class="goods-cards__image" style="background-image: url(images/temp/gallery/1/1.jpeg);"></a>
                         <div class="goods-cards__title">
                             <a href="#">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magni inventore, dolorem blanditiis quibusdam quidem debitis vel et esse nostrum, minus ducimus perferendis rerum sit fuga animi dolorum. Voluptates, sapiente?
+                                Святой Источник вода питьевая негазированная, 5 л
                             </a>
                         </div>
                         <div class="goods-cards__sep"></div>
@@ -309,7 +327,7 @@ layout: default.hbs
                         <a href="#" class="goods-cards__image" style="background-image: url(images/temp/gallery/1/2.jpeg);"></a>
                         <div class="goods-cards__title">
                             <a href="#">
-                                Similique magni inventore, dolorem blanditiis quibusdam quidem debitis vel et esse nostrum, minus ducimus perferendis rerum sit fuga animi dolorum. Voluptates, sapiente?
+                                ФрутоНяня вода артезианская питьевая негазированная, 12 шт по 0,33 л
                             </a>
                         </div>
                         <div class="goods-cards__sep"></div>
@@ -332,7 +350,7 @@ layout: default.hbs
                         <a href="#" class="goods-cards__image" style="background-image: url(images/temp/gallery/1/3.jpeg);"></a>
                         <div class="goods-cards__title">
                             <a href="#">
-                                Vel et esse nostrum, minus ducimus perferendis rerum sit fuga animi dolorum. Voluptates, sapiente?
+                                Вода Калинов Родничок для детей, 2 шт х 6,0 л
                             </a>
                         </div>
                         <div class="goods-cards__sep"></div>
@@ -568,5 +586,9 @@ layout: default.hbs
         </div>
     </div>
 </footer>
+
+<div class="product-order__btn-add product-order__btn-add--static invisible">
+    <button type="button" class="btn-green">Добавить в корзину</button>
+</div>
 
 {{> popup-gallery }}

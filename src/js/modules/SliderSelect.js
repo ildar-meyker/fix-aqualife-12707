@@ -20,6 +20,7 @@ const SliderSelect = {
 	init() {
 		$(".slider-select").each(function () {
 			new Swiper($(this).find(".swiper")[0], {
+				mousewheel: true,
 				slidesPerView: "auto",
 				navigation: {
 					prevEl: $(this).find(".slider-select__prev")[0],

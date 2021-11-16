@@ -1,9 +1,9 @@
 .product-settings {
 	&__item {
-		margin-top: 15px;
+		margin-bottom: 15px;
 
-		&:first-child {
-			margin-top: 0;
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 
@@ -12,12 +12,21 @@
 		font-size: 16px;
 		font-weight: 500;
 	}
+
+	&__count {
+		margin-left: 20px;
+		width: 85/14 + em;
+
+		.input-default {
+			text-align: center;
+		}
+	}
 }
 
 @media (min-width: 1050px) {
 	.product-settings {
 		&__item {
-			margin-top: 20px;
+			margin-bottom: 20px;
 		}
 
 		&__title {

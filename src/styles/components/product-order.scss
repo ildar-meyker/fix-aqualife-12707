@@ -1,2 +1,297 @@
 .product-order {
+	&__tags {
+		@extend .clearfix;
+		margin-bottom: 7px;
+		display: none;
+
+		&--top {
+			display: block;
+		}
+
+		&__item {
+			float: left;
+			margin: 0 5px 5px 0;
+			padding: 7/10 + em;
+			min-width: 75px;
+			background: #ffad4a;
+			white-space: nowrap;
+			text-align: center;
+			font-size: 10px;
+			color: #fff;
+
+			&--blue {
+				background: #158acc;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__label {
+		margin-bottom: 20px;
+		color: #158acc;
+	}
+
+	&__price {
+		&__col-left {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		&__actual {
+			flex: 0 0 auto;
+			order: 1;
+			margin-right: 10px;
+			font-size: 36px;
+			font-weight: 500;
+			color: #158acc;
+		}
+
+		&__old {
+			flex: 0 0 auto;
+			order: 2;
+			text-decoration: line-through;
+			font-size: 18px;
+		}
+
+		&__count {
+			flex: 0 0 auto;
+			order: 3;
+			width: 100%;
+			margin-top: 5px;
+			color: #bcbcbc;
+		}
+	}
+
+	&__payment {
+		display: none;
+	}
+
+	&__btn-add {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+
+		&--static {
+			position: static;
+		}
+
+		> * {
+			width: 100%;
+		}
+	}
+
+	&__express {
+		display: flex;
+		align-items: center;
+		margin-top: 15px;
+
+		&__icon {
+			flex: 0 0 auto;
+			width: 36/20 + em;
+			height: 36/20 + em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 10px;
+			border-radius: 50%;
+			background: #158acc;
+			font-size: 20px;
+			color: #fff;
+		}
+
+		&__text {
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #158acc;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	&__city {
+		position: relative;
+		display: flex;
+		margin: 10px 0;
+
+		&__icon {
+			flex: 0 0 auto;
+			width: 23px;
+			font-size: 18px;
+		}
+
+		&__desc {
+			flex-grow: 1;
+			padding-top: 3px;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__name {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			i {
+				font-size: 9/14 + em;
+			}
+		}
+
+		&__edit {
+			margin-top: 6px;
+			color: #bcbcbc;
+		}
+	}
+
+	&__delivery-price {
+		padding: 10px 0;
+		border-top: 1px solid #ededed;
+		font-weight: 500;
+	}
+
+	&__tip {
+		min-height: 46px;
+		display: flex;
+		align-items: center;
+		padding: 8px 20px;
+		background: #f8faff;
+		font-size: 12px;
+		font-weight: 300;
+		color: #464646;
+	}
+
+	&__sep {
+		border-top: 1px solid #ededed;
+		margin: 15px 0;
+	}
+}
+
+@media (min-width: 1050px) {
+	.product-order {
+		box-shadow: 0px 0px 40px rgba(134, 134, 134, 0.2);
+
+		&__desc {
+			padding: 20px;
+		}
+
+		&__label {
+			display: none;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__tags {
+			display: block;
+
+			&--top {
+				display: none;
+			}
+
+			&__item {
+				float: none;
+				min-width: 124px;
+				font-size: 14px;
+				margin: 0;
+			}
+		}
+
+		&__price {
+			display: inline-block;
+			width: 100%;
+			position: relative;
+
+			&__col-left {
+				display: block;
+				padding-top: 5px;
+				float: left;
+			}
+
+			&__col-right {
+				position: absolute;
+				top: -20px;
+				right: -20px;
+			}
+
+			&__old {
+				text-align: right;
+			}
+
+			&__count {
+				font-size: 14px;
+			}
+		}
+
+		&__express {
+			margin: 15px 0;
+
+			&__icon {
+				font-size: 25px;
+			}
+
+			&__text {
+				br {
+					display: block;
+				}
+			}
+		}
+
+		&__btn-add {
+			padding-bottom: 15px;
+			border-bottom: 1px solid #ededed;
+			position: static;
+
+			> * {
+				font-size: 18px;
+			}
+		}
+
+		&__city {
+			margin: 15px 0;
+		}
+
+		&__delivery-price {
+			padding: 0;
+			border-top: 0;
+		}
+
+		&__payment {
+			display: flex;
+			margin: 15px 0;
+
+			&__type {
+				position: relative;
+				flex: 0 0 auto;
+				width: 50%;
+				padding-left: 30px;
+
+				i {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					margin-top: -0.5em;
+					font-size: 20px;
+				}
+			}
+		}
+
+		&__tip {
+			padding: 12px 20px;
+			font-size: 14px;
+		}
+	}
 }

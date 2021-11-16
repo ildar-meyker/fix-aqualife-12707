@@ -30,13 +30,15 @@
 	}
 
 	.swiper-slide {
+		transition: all 0.2s;
 		flex: 0 0 auto;
 		width: auto;
-		padding: 13/14 + em 19/14 + em;
+		padding: 13/14 + em 20/14 + em;
 		border: 1px solid #ededed;
 		border-radius: 2px;
 		white-space: nowrap;
 		margin-right: 5px;
+		cursor: pointer;
 
 		&.active {
 			border-color: #158acc;

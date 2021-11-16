@@ -2,8 +2,28 @@
 	min-width: 320px;
 	font-family: "Muller", sans-serif;
 	font-size: 14px;
-	line-height: 1;
 	color: #001a34;
+
+	&__about {
+		&__row {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__col-gallery {
+			order: 1;
+		}
+
+		&__col-card {
+			margin-top: 45px;
+			order: 2;
+		}
+
+		&__col-desc {
+			margin-top: 30px;
+			order: 3;
+		}
+	}
 
 	&__more {
 		display: none;
@@ -13,7 +33,14 @@
 		margin: 25px 0;
 	}
 
+	&__desc {
+		&__count {
+			margin-left: 20px;
+		}
+	}
+
 	&__h1 {
+		display: none;
 		margin-bottom: 20px;
 		text-transform: uppercase;
 		font-size: 18px;
@@ -32,8 +59,41 @@
 	.page-product {
 		font-size: 16px;
 
+		&__about {
+			&__row {
+				flex-direction: row;
+				flex-wrap: wrap;
+				margin: 0 -15px;
+			}
+
+			&__col-gallery,
+			&__col-desc,
+			&__col-card {
+				flex: 0 0 auto;
+				padding: 0 15px;
+			}
+
+			&__col-gallery {
+				margin-bottom: 45px;
+				width: 100%;
+			}
+
+			&__col-desc {
+				order: 2;
+				width: 50%;
+				margin-top: 0;
+			}
+
+			&__col-card {
+				order: 3;
+				margin-top: 0;
+				width: 50%;
+			}
+		}
+
 		&__more {
 			display: block;
+			margin-top: 40px;
 		}
 
 		&__tabs {
@@ -41,6 +101,7 @@
 		}
 
 		&__h1 {
+			display: block;
 			margin-bottom: 30px;
 			font-size: 36px;
 		}
@@ -61,17 +122,17 @@
 
 			&__col-gallery {
 				flex: 0 0 auto;
-				width: 33.33%;
+				width: 37%;
 			}
 
 			&__col-desc {
 				flex: 0 0 auto;
-				width: 33.33%;
+				width: 35%;
 			}
 
 			&__col-card {
 				flex: 0 0 auto;
-				width: 33.33%;
+				width: 28%;
 			}
 		}
 	}
