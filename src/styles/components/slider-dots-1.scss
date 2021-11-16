@@ -1,0 +1,31 @@
+.slider-dots-1 {
+	.slick-dots {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+
+		li {
+			display: inline-block;
+			margin: 0 3px;
+
+			button {
+				transition: all 0.2s;
+				width: 10px;
+				height: 10px;
+				background: #ededed;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+
+			&.slick-active {
+				button {
+					background: #30a657;
+				}
+			}
+		}
+	}
+}

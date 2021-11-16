@@ -13,3 +13,16 @@
 		font-weight: 500;
 	}
 }
+
+@media (min-width: 1050px) {
+	.product-settings {
+		&__item {
+			margin-top: 20px;
+		}
+
+		&__title {
+			margin-bottom: 15px;
+			font-size: 18px;
+		}
+	}
+}
