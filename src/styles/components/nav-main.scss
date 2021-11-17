@@ -1,0 +1,34 @@
+.nav-main {
+	display: flex;
+	align-items: center;
+
+	&__item {
+		margin-right: 45px;
+
+		font-weight: 500;
+
+		&--menu {
+			display: flex;
+			align-items: center;
+			text-transform: uppercase;
+			color: #158acc;
+
+			i {
+				position: relative;
+				top: -2px;
+				margin-right: 10px;
+			}
+		}
+
+		&--active {
+			padding: 11px 22px;
+			border-radius: 8px;
+			background: #57844d;
+			color: #fff;
+		}
+
+		&--blue {
+			color: #158acc;
+		}
+	}
+}

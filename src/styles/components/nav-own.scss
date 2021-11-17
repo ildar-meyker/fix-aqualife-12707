@@ -1,0 +1,41 @@
+.nav-own {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	&__item {
+		margin-left: 30px;
+		display: flex;
+		align-items: center;
+
+		&--cart {
+			text-transform: uppercase;
+
+			.nav-own__icon {
+				transform: scale(1.6);
+				transform-origin: 100% 50%;
+			}
+		}
+	}
+
+	&__icon {
+		position: relative;
+		margin-right: 12px;
+		font-size: 18px;
+		color: #158acc;
+	}
+
+	&__count {
+		position: absolute;
+		top: -0.5em;
+		right: -0.7em;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: #ff6c2c;
+		text-align: center;
+		font-size: 9px;
+		line-height: 1.8;
+		color: #fff;
+	}
+}

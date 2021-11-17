@@ -255,6 +255,10 @@
 			border-bottom: 1px solid #ededed;
 			position: static;
 
+			&--static {
+				display: none;
+			}
+
 			> * {
 				font-size: 18px;
 			}

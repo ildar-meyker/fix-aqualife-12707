@@ -35,12 +35,18 @@
 	transform: rotate(90deg);
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 @import "./components/fonts";
 @import "./components/icomoon";
 @import "./components/buttons";
 @import "./components/inputs";
 @import "./components/article";
 @import "./components/layout";
+@import "./components/header";
 @import "./components/footer";
 @import "./components/slider-gallery";
 @import "./components/slider-select";
@@ -49,6 +55,11 @@
 @import "./components/table-props";
 @import "./components/nav-tabs";
 @import "./components/nav-props";
+@import "./components/nav-top";
+@import "./components/nav-bread";
+@import "./components/nav-main";
+@import "./components/nav-own";
+@import "./components/form-search";
 @import "./components/tabs-panes";
 @import "./components/product-settings";
 @import "./components/product-order";

@@ -34119,7 +34119,9 @@ var SliderSelect = {
   init: function init() {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-select").each(function () {
       new swiper_swiper_bundle__WEBPACK_IMPORTED_MODULE_1___default.a(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).find(".swiper")[0], {
-        mousewheel: true,
+        mousewheel: {
+          forceToAxis: true
+        },
         slidesPerView: "auto",
         navigation: {
           prevEl: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).find(".slider-select__prev")[0],
